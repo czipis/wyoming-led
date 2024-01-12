@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 docker run \
     -it \
-    -p 10600:10600 \
-    --device /dev/snd \
-    'rhasspy/wyoming-mic-external' "$@"
+    -p 10500:10500 \
+    --device /dev/gpiomem \
+    'czipis/wyoming-led' "$@"

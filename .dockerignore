@@ -4,5 +4,5 @@
 !setup.py
 !script/setup
 !script/run
-!wyoming_mic_external/*.py
+!wyoming_led/*.py
 !docker/run

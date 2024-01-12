@@ -16,10 +16,10 @@ if requirements_path.is_file():
 # -----------------------------------------------------------------------------
 
 setup(
-    name="wyoming_handle_external",
+    name="wyoming_led",
     version="1.0.0",
     description="Wyoming server for external audio input",
-    url="http://github.com/rhasspy/wyoming-mic-external",
+    url="http://github.com/czipis/wyoming-led",
     author="Michael Hansen",
     author_email="mike@rhasspy.org",
     packages=setuptools.find_packages(),
@@ -34,5 +34,5 @@ setup(
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3.11",
     ],
-    keywords="rhasspy wyoming audio microphone",
+    keywords="rhasspy wyoming led",
 )

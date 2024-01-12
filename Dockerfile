@@ -4,19 +4,19 @@ ENV LANG C.UTF-8
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && \
-    apt-get install --yes --no-install-recommends alsa-utils
+    apt-get install --yes --no-install-recommends gcc libc6-dev
 
 WORKDIR /app
 
 COPY script/setup ./script/
 COPY setup.py requirements.txt MANIFEST.in ./
-COPY wyoming_mic_external/ ./wyoming_mic_external/
+COPY wyoming_led/ ./wyoming_led/
 
 RUN script/setup
 
 COPY script/run ./script/
 COPY docker/run ./
 
-EXPOSE 10600
+EXPOSE 10500
 
 ENTRYPOINT ["/app/run"]
